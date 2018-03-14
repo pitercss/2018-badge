@@ -5,25 +5,99 @@
   <title></title>
   <style>
     body {
-      background-color: #f6f6f6;
-
-      --violet: #6223db;
-      --red: #f7431a;
-      --yellow: #ffe31a;
-      --green: #00e2b6;
-      --pink: #eb038b;
+      margin: 0;
+      display: grid;
+      grid-gap: 25px;
+      grid-template-columns: repeat(2, min-content);
     }
 
-    .badge {
+    /*
+      violet: #6223db
+      red: #f7431a
+      yellow: #ffe31a
+      green: #00e2b6
+      pink: #eb038b
+
+      bracket
+      plus
+      slash
+      tag
+    */
+
+    /* Random */
+
+    .random {
+      position: relative;
       width: 400px;
       height: 220px;
-      background-color: var(--violet);
-      background-image: url(images/bracket-yellow.svg);
-      background-size: auto 22px;
+      overflow: hidden;
+    }
+
+    .random--test-1 {
+      background-color: #eb038b;
+    }
+
+    .random--test-2 {
+      background-color: #ffe31a;
+    }
+
+    /* Shape */
+
+    .random__shape {
+      position: absolute;
+      background-repeat: space;
+    }
+
+    .random__shape--test-1 {
+      top: 20%;
+      right: 0;
+      width: 50%;
+      height: 50%;
+      background-image: url(images/bracket-ffe31a.svg);
+      background-size: 25px auto;
+    }
+
+    .random__shape--test-2 {
+      bottom: 20%;
+      left: 10%;
+      width: 80%;
+      height: 50%;
+      background-image: url(images/slash-00e2b6.svg);
+      background-size: 100px auto;
+    }
+
+    /* Rect */
+
+    .random__rect {
+      position: absolute;
+    }
+
+    .random__rect--test-1 {
+      left: 0;
+      bottom: 0;
+      width: 50%;
+      height: 70%;
+      background-color: #6223db;
+      transform: skewX(-45deg);
+    }
+
+    .random__rect--test-2 {
+      right: 0;
+      top: 0;
+      width: 60%;
+      height: 44%;
+      background-color: #f7431a;
     }
   </style>
 </head>
 <body>
-  <div class="badge"></div>
+  <div class="random random--test-1">
+    <div class="random__rect random__rect--test-1"></div>
+    <div class="random__shape random__shape--test-1"></div>
+  </div>
+  <div class="random random--test-2">
+    <div class="random__rect random__rect--test-2"></div>
+    <div class="random__shape random__shape--test-2"></div>
+  </div>
 </body>
 </html>

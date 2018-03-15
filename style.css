@@ -1,0 +1,155 @@
+/* Random */
+
+.random {
+  position: relative;
+  width: 400px;
+  height: 220px;
+  overflow: hidden;
+}
+
+/* Fill */
+
+.random__green {
+  background-color: #00e2b6;
+}
+
+.random__pink {
+  background-color: #eb038b;
+}
+
+.random__red {
+  background-color: #f7431a;
+}
+
+.random__violet {
+  background-color: #6223db;
+}
+
+.random__yellow {
+  background-color: #ffe31a;
+}
+
+/* Rect */
+
+.random__rect {
+  position: absolute;
+}
+
+/* Skew */
+
+.random__skew-plus {
+  transform: skewX(45deg);
+}
+
+.random__skew-minus {
+  transform: skewX(-45deg);
+}
+
+/* Shape */
+
+.random__shape {
+  position: absolute;
+  background-repeat: space;
+}
+
+/* Bracket */
+
+.random__bracket-green {
+  background-image: url(images/bracket-green.svg);
+}
+
+.random__bracket-pink {
+  background-image: url(images/bracket-pink.svg);
+}
+
+.random__bracket-red {
+  background-image: url(images/bracket-red.svg);
+}
+
+.random__bracket-violet {
+  background-image: url(images/bracket-violet.svg);
+}
+
+.random__bracket-yellow {
+  background-image: url(images/bracket-yellow.svg);
+}
+
+/* Plus */
+
+.random__plus-green {
+  background-image: url(images/plus-green.svg);
+}
+
+.random__plus-pink {
+  background-image: url(images/plus-pink.svg);
+}
+
+.random__plus-red {
+  background-image: url(images/plus-red.svg);
+}
+
+.random__plus-violet {
+  background-image: url(images/plus-violet.svg);
+}
+
+.random__plus-yellow {
+  background-image: url(images/plus-yellow.svg);
+}
+
+/* Slash */
+
+.random__slash-green {
+  background-image: url(images/slash-green.svg);
+}
+
+.random__slash-pink {
+  background-image: url(images/slash-pink.svg);
+}
+
+.random__slash-red {
+  background-image: url(images/slash-red.svg);
+}
+
+.random__slash-violet {
+  background-image: url(images/slash-violet.svg);
+}
+
+.random__slash-yellow {
+  background-image: url(images/slash-yellow.svg);
+}
+
+/* Tag */
+
+.random__tag-green {
+  background-image: url(images/tag-green.svg);
+}
+
+.random__tag-pink {
+  background-image: url(images/tag-pink.svg);
+}
+
+.random__tag-red {
+  background-image: url(images/tag-red.svg);
+}
+
+.random__tag-violet {
+  background-image: url(images/tag-violet.svg);
+}
+
+.random__tag-yellow {
+  background-image: url(images/tag-yellow.svg);
+}
+
+/* Pattern */
+
+.random__pattern-small {
+  background-size: 25px auto;
+}
+
+.random__pattern-medium {
+  background-size: 50px auto;
+}
+
+.random__pattern-large {
+  background-size: 75px auto;
+}

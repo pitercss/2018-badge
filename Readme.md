@@ -122,25 +122,31 @@
 
 В формате JSON это можно описать как:
 
-```
+```json
 {
-  "block_color": "red",
-  "geometric_color": "green",
-  "geometric_scew": "minus",
-  "geometric_size": {
-    "top": "0%",
-    "left": "25%",
-    "width": "100%",
-    "height": "50%"
+  "block": {
+    "color": "red"
   },
-  "pattern_type": "plus",
-  "pattern_color": "yellow",
-  "pattern_zoom": "small",
-  "pattern_size": {
-    "top": "0%",
-    "left": "25%",
-    "width": "100%",
-    "height": "50%"
+  "geometric": {
+    "color": "green",
+    "scew": "minus",
+    "size": {
+      "top": "0%",
+      "left": "25%",
+      "width": "100%",
+      "height": "50%"
+    }
+  },
+  "pattern": {
+    "type": "plus",
+    "color": "yellow",
+    "zoom": "small",
+    "size": {
+      "top": "0%",
+      "left": "25%",
+      "width": "100%",
+      "height": "50%"
+    }
   }
 }
 ```

@@ -35,7 +35,7 @@
 
     const badge = {
       block: {},
-      rect: {
+      geometric: {
         size: generateSize(RECT_SIZES),
         scew: getRandomValue(SCEWS)
       },
@@ -67,16 +67,16 @@
     block.classList.add('random');
     block.classList.add('random__' + params.block.color);
 
-    const rect = document.createElement('div');
-    rect.classList.add('random__rect');
-    rect.classList.add('random__' + params.rect.color);
-    if (params.rect.scew !== 'none') {
-      rect.classList.add('random__skew-' + params.rect.scew);
+    const geometric = document.createElement('div');
+    geometric.classList.add('random__rect');
+    geometric.classList.add('random__' + params.geometric.color);
+    if (params.geometric.scew !== 'none') {
+      geometric.classList.add('random__skew-' + params.geometric.scew);
     }
-    for (var key in params.rect.size) {
-      rect.style[key] = params.rect.size[key];
+    for (var key in params.geometric.size) {
+      geometric.style[key] = params.geometric.size[key];
     }
-    block.appendChild(rect);
+    block.appendChild(geometric);
 
     const pattern = document.createElement('div');
     pattern.classList.add('random__shape');

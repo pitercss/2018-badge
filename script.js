@@ -30,6 +30,9 @@
         width: getRandomValue(sizes),
         height: getRandomValue(sizes)
       };
+      if (size.top === '0%' && size.left === '0%' && size.width === '100%' && size.height === '100%') {
+        return generateSize(sizes);
+      }
       return size;
     };
 
